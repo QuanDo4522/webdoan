@@ -1,0 +1,366 @@
+* {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+#bodyHeader {
+    margin: 0.7em 0.5em 0 0.5em;
+}
+
+    #bodyHeader input {
+        width: 100%;
+        margin: 0.5em 0 0 0;
+        padding: 0.75em;
+        box-sizing: border-box;
+    }
+
+#content {
+    margin-top: 2em;
+    border-top: 1px solid;
+    padding-top: 0.5em;
+}
+/* Ưu đãi */
+.space {
+    background-color: #eaeaea;
+    height: 1em;
+}
+
+.uudaiDacbiet {
+    margin: 0.7em 0.5em 0 0.5em;
+}
+
+.titleDanhmuc span {
+    font-weight: bold;
+}
+
+.titleDanhmuc a {
+    float: right;
+    color: #000;
+    text-decoration: none;
+}
+
+.contentDanhmuc {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0.5em 0;
+}
+
+    .contentDanhmuc .mucUudai {
+        margin: 0 0.5em;
+        max-height: 155px;
+    }
+
+        .contentDanhmuc .mucUudai div {
+            width: 100%;
+            max-height: 110px;
+            overflow: hidden;
+        }
+
+.mucUudai div img {
+    width: 100%;
+}
+
+.mucUudai a {
+    text-decoration: none;
+    color: #000;
+    font-size: small;
+    font-weight: bold;
+}
+/* Món ăn */
+.monAn {
+    margin: 0.75em 0 0 0.5em;
+}
+
+.auto {
+    overflow: auto;
+}
+
+.contentMonan {
+    width: 1360px;
+}
+
+.ttMonAn {
+    margin: 0 10px 8px 10px;
+    max-height: 155px;
+    width: 150px;
+    float: left;
+    overflow: hidden;
+}
+
+    .ttMonAn div {
+        max-height: 110px;
+        overflow: hidden;
+    }
+
+        .ttMonAn div img {
+            width: 100%;
+        }
+
+    .ttMonAn a {
+        text-decoration: none;
+        color: #000;
+        font-size: small;
+        font-weight: bold;
+    }
+/* footer */
+.bodyFooter {
+    margin: 0.5em 0.5em 2em 0.5em;
+}
+
+.menu {
+    border-bottom: 1px solid #000;
+    padding-bottom: 0.5em;
+    overflow: auto;
+}
+
+    .menu div {
+        width: 25%;
+        float: left;
+        margin: 0;
+        height: 30px;
+        line-height: 30px
+    }
+
+        .menu div button {
+            width: 100%;
+            margin: 0;
+            border: 0;
+            background-color: #fff;
+            height: 100%;
+        }
+
+.choose {
+    color: #08f;
+    font-weight: bold;
+}
+
+.rowMenu {
+    margin-top: 1em;
+}
+
+    .rowMenu .img {
+        display: inline-block;
+        width: 30%;
+        max-height: 100px;
+        overflow: hidden;
+        margin: 0;
+    }
+
+        .rowMenu .img img {
+            width: 100%;
+        }
+
+    .rowMenu .thongtin {
+        display: inline-block;
+        width: 68%;
+        margin: 0;
+    }
+
+        .rowMenu .thongtin .titleMenu {
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .rowMenu .thongtin .p {
+            font-size: 0.8em;
+            opacity: 0.7;
+        }
+
+        .rowMenu .thongtin .kindFood {
+            font-size: 0.8em;
+        }
+
+.muc:focus {
+    border: none;
+}
+
+.datnhieu {
+    display: none;
+}
+
+.moi {
+    display: none;
+}
+
+.ganday {
+    display: none;
+}
+
+.titleMonan {
+    margin: 0.5em 0 0.2em 0.2em;
+}
+
+.giasanpham {
+    opacity: 0.7;
+}
+
+/* responsive */
+@media only screen and (min-width: 768px) {
+    .backgroundContent {
+        background-color: #eaeaea;
+    }
+
+    .backgroundHeader {
+        background-image: url('../images/banner.jpg');
+        overflow: auto;
+        height: 400px;
+    }
+
+    #bodyHeader {
+        margin: 14em 15em 0 15em;
+    }
+
+        #bodyHeader b {
+            color: #fff;
+            font-weight: normal;
+            font-size: x-large;
+        }
+    /* Ưu đãi đặc biệt */
+    #content {
+        border: none;
+        margin: 0 12em 0 12em;
+    }
+
+    .uudaiDacbiet {
+        margin: 4em 0 0 0;
+        background-color: #fff;
+        padding: 1em 1em 0 1em;
+    }
+
+    .titleDanhmuc span {
+        color: #cf2127;
+        font-weight: bold;
+        font-size: x-large;
+    }
+
+    .titleDanhmuc a {
+        color: #0288d1;
+        font-size: larger;
+    }
+
+    .contentDanhmuc .mucUudai {
+        margin: 1em 2em;
+        max-height: 20em;
+    }
+
+    .contentDanhmuc {
+        grid-template-columns: auto auto auto;
+        margin: 0.5em 0;
+    }
+
+        .contentDanhmuc .mucUudai div {
+            max-height: 20em;
+            overflow: hidden;
+        }
+
+    .mucUudai a {
+        font-size: 1em;
+    }
+    /* Món ăn */
+    .auto {
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .monAn {
+        background-color: #fff;
+        padding: 1em 1em 0 1em;
+        margin: 0;
+    }
+
+    .contentMonan {
+        margin: 0.5em 0;
+    }
+
+    .ttMonAn {
+        display: inline-block;
+        width: 19%;
+        max-height: 20em;
+        padding: 0 0.5em;
+        margin: 1em 0.5em;
+    }
+
+        .ttMonAn div {
+            width: 100%;
+            max-height: 8em;
+            overflow: hidden;
+        }
+
+            .ttMonAn div img {
+                width: 100%;
+            }
+
+        .ttMonAn a {
+            text-decoration: none;
+            color: #000;
+            font-size: small;
+            font-weight: bold;
+        }
+
+        .ttMonAn a {
+            font-size: 1em;
+        }
+
+    .baiviet {
+        display: none;
+    }
+    /* footer */
+    .bodyFooter {
+        border: none;
+        margin: 0 12em 0 12em;
+        background-color: #fff;
+        padding: 0 0.5em;
+    }
+
+    .menu {
+        border-bottom: 1px solid #000;
+        padding: 0.5em;
+    }
+
+        .menu div {
+            width: 25%;
+            float: left;
+            margin: 0;
+            height: 2.5em;
+            line-height: 2.5em;
+        }
+
+    .rowMenu {
+        margin: 2em 1em 0.5em 1em;
+        width: 30%;
+        display: inline-block;
+    }
+
+        .rowMenu .img {
+            width: 100%;
+            max-height: 16em;
+            overflow: hidden;
+            margin: 0;
+        }
+
+            .rowMenu .img img {
+                width: 100%;
+            }
+
+        .rowMenu .thongtin {
+            width: 100%;
+            margin: 0;
+        }
+
+            .rowMenu .thongtin .titleMenu {
+                font-size: 0.9em;
+                font-weight: bold;
+            }
+
+            .rowMenu .thongtin .p {
+                font-size: 0.8em;
+                opacity: 0.7;
+            }
+
+            .rowMenu .thongtin .kindFood {
+                font-size: 0.8em;
+            }
+}
